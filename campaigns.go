@@ -67,7 +67,7 @@ type ListOfCampaigns struct {
 
 type CampaignCreationRecipients struct {
 	ListId string `json:"list_id"`
-	SegmentOptions CampaignCreationSegmentOptions `json:"segment_opts"`
+	SegmentOptions *CampaignCreationSegmentOptions `json:"segment_opts,omitempty"`
 }
 
 type CampaignCreationSegmentOptions struct {
